@@ -165,7 +165,7 @@ ForeignKey与OneToOneField：
     - models.CASCADE：级联删除，当主键删除时，所有关联的数据全部删除
     - models.PROTECT：保护，当删除主键时，假如还有关联数据，那么抛出异常
     - models.SET_NULL：主键删除时，将该字段设置为null
-    - models.SET_DEFAULT：设置为默认值，但是必须在定义字段是给出默认值
+    - models.SET_DEFAULT：设置为默认值，但是必须在定义字段时给出默认值
     - models.SET()：使用函数的返回值作为字段值
     - models.DO_NOTHING：什么都不做
 
